@@ -3,7 +3,7 @@ export default commonPackageTemplate;
 
 function commonPackageTemplate(model, link, linkText) {
   var boardgamedata = linkText.split("<>")
-  link = 'https://boardgamegeek.com/boardgame/' + boardgamedata[0];
+  link = boardgamedata[0];
   linkText = boardgamedata[1];
   var thumbnail = boardgamedata[2];
   if (thumbnail != "null") {
