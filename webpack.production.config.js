@@ -4,8 +4,10 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 var webpack = require('webpack');
+var port = process.env.PORT || 8080;
 
 module.exports = {
+  port: port,
   entry: "./src/main",
 
   output: {
